@@ -1,0 +1,79 @@
+:root {
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  .list{
+    list-style: none;
+    padding: 0;
+  }
+
+  body {
+    transition: color 150ms var(--timing-function),
+      background-color 150ms var(--timing-function);
+      padding: 400px 400px 600px 400px;
+      font-family: 'Poppins', sans-serif;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.6)), url(../images/trew.jpg);
+      background-color: rgba(47, 48, 58, 0.6);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: wheat;
+  }
+.wrapper{
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%);
+}
+.country-inp{
+  width: 320px;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid grey;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+}
+.country-inp::placeholder{
+  font-size: 20px;
+  align-self: center;
+  text-align: center;
+}
+.country-inp:hover,
+.country-inp:focus {
+  outline: none;
+  border: 1px solid cyan;
+}
+.countries-list{
+  font-size: 25px;
+}
+.country-wrapper{
+  align-items: start;
+}
+.card{
+  display: flex;
+}
+.card__img-wrapper{
+  padding-top: 125px;
+  padding-left: 30px;
+}
+.card__image {
+  width: 400px;
+  height: 200px;
+}
+.card__name:hover{
+color: cyan;
+cursor: pointer;
+}
+.card__content{
+ text-align: start;
+}
+.countries-list-item:hover{
+  color: cyan;
+  cursor: pointer;
+}
